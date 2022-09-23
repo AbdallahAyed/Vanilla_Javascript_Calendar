@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf6f9;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 38px;
+  padding-top: 20px;
+}
+
+header .title {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #023047;
+}
+
+header .icons span {
+  width: 50px;
+  height: 50px;
+  user-select: none;
+  font-size: 64px;
+  margin: 0 40px;
+  color: rgb(72 149 239);
+}
+
+section {
+  width: 95vw;
+  padding: 17px 56px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.weeks ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+}
+
+.weeks ul li {
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+.days ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+}
+
+.days ul li {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #03045e;
+  padding: 8px;
+}
+
+.inactive {
+  color: #457b9d;
+}
+
+.active {
+  background: rgb(173 232 243);
+  border-radius: 27px;
+  color: #fff !important;
+}
+
+.days ul li:hover {
+  color: rgb(72 149 239);
+}
